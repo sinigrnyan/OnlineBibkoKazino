@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}БИБКОКАЗИНО{% endblock %} {% block content
+%}
+<h1 align="center" style="color:red; font-size: 300%;">БИБКОКАЗИНО</h1>
+<p align="center" style="color:orangered; font-size: 200%;">ПОЙМАЙ 3 ОДИНАКОВЫХ ЦЫФОРКИ И ПОЛУЧИ 1000 БИБОК</p>
+<p align="center" style="color:pink; font-size: 100%;">ПОЙМАЙ 2 ОДИНАКОВЫХ ЦЫФОРКИ И ПОЛУЧИ 50 БИБОК</p>
+<p align="center" style="color:orange; font-size: 200%;">ВЫПАВШИЕ ВАМ ЦЫФОРКИ</p>
+<p align="center" style="color:yellow; font-size: 300%;">{{ a1, b1, c1 }}</p>
+<p align="center" style="color:purple; font-size: 100%;">У вас осталось {{ Bibki1 }} бибок</p>
+
+<form method="POST">
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">Дать новые цыфорки (стоимость: 10 бибок)</button>
+  </div>
+</form>
+{% endblock %}

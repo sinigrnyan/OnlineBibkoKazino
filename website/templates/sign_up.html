@@ -1,0 +1,97 @@
+{% extends "base.html" %} {% block title %}ВЫИГРАЙ БИБКИ{% endblock %} {% block
+content %}
+<form method="POST">
+  <h3 align="center" style="color:red; font-size: 150%;">БИБКОКАЗИНО NeMamont</h3>
+  <h3 align="center" style="color:red; font-size: 300%;">ВЫИГРЫВАЙ БИБКИ!!!</h3>
+  <h3 align="center" style="color:red; font-size: 120%;">С регистрацией, но без СМС.</h3>
+  <h3 align="center" style="color: orange;">Зарегистрируйте свой БибАккаунт СЕЙЧАС и заберите свои БИБКИ:</h3>
+  <div class="form-group">
+    <label style="color: yellow;"  for="firstName">Имя</label>
+    <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      name="firstName"
+      placeholder="Введи имя со своей кредитки"
+    />
+  </div>
+  <div class="form-group">
+    <label style="color: yellow;"  for="lastName">Фамилия</label>
+    <input
+      type="text"
+      class="form-control"
+      id="lastName"
+      name="lastName"
+      placeholder="Введи фамилию со своей кредитки"
+    />
+  </div>
+  <div class="form-group">
+    <label style="color: yellow;"  for="password1">Пароль</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password1"
+      name="password1"
+      placeholder="Введи пароль от своего будущего БибАккаунта"
+    />
+  </div>
+  <div class="form-group">
+    <label style="color: yellow;"  for="password2">Подтверди пароль</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password2"
+      name="password2"
+      placeholder="Повтори пароль"
+    />
+  </div>
+  <div class="form-group">
+    <label style="color: yellow;"  for="cardNumber">Номер кредитки</label>
+    <input
+      type="number"
+      class="form-control"
+      id="cardNumber"
+      name="cardNumber"
+      placeholder="Введи номер кредитки"
+    />
+  </div>
+  <div class="form-group">
+    <label style="color: yellow;"  for="securityCode">Код безопасности</label>
+    <input
+      type="number"
+      class="form-control"
+      id="securityCode"
+      name="securityCode"
+      placeholder="Введи 3-цыфорный код сзади кредитки"
+    />
+  </div>
+  <div class="form-group">
+  <label style="color: yellow;"  for="expirationDate">Дата просрочки кредитки</label>
+  </div>
+  <div class="form-group" style="display:inline">
+    <div style="float: left; width: 10%;">
+      <label style="color: yellow;"  for="expirationDateMonth">Месяц</label>
+      <input
+      type="number"
+      class="form-control"
+      id="expirationDateMonth"
+      name="expirationDateMonth"
+      placeholder="Цыфрами"
+      />
+    </div>
+    <div style="float: left; width: 20%;">
+    <label style="color: yellow;" for="expirationDateYear">Год</label>
+    <input
+      type="number"
+      class="form-control"
+      id="expirationDateYear"
+      name="expirationDateYear"
+      placeholder="Тоже цыфрами"
+    />
+    </div>
+  </div>
+
+  <br />
+  <button style="float: right;" type="submit" class="btn btn-primary">ВПЕРЁД, ЗА БИБКАМИ!</button>
+</form>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block title %}ЗАХОДИ ЗА БИБКАМИ{% endblock %} {% block content
+%}
+<form method="POST">
+  <h3 align="center" style="color:red; font-size: 150%;">БИБКОКАЗИНО NeMamont</h3>
+  <h3 align="center" style="color:red; font-size: 300%;">ВЫИГРЫВАЙ БИПКИ!!!</h3>
+  <h3 align="center" style="color: orange;">Войдите в свой БибАккаунт:</h3>
+  <div class="form-group">
+    <label style="color: yellow;" for="cardNumber">Номер кредитной карточки</label>
+    <input
+      type="number"
+      class="form-control"
+      id="cardNumber"
+      name="cardNumber"
+      placeholder="Введи номер кредитки"
+    />
+  </div>
+  <div class="form-group">
+    <label style="color: yellow;" for="password">Пароль от БибАккаунта</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      placeholder="Введи свой пароль от БибАккаунта"
+    />
+  </div>
+  <br />
+  <button style="float: right;" type="submit" class="btn btn-primary">ВПЕРЁД, ЗА БИБКАМИ!</button>
+</form>
+{% endblock %}
