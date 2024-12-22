@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:latest
 
 WORKDIR /code
 
@@ -12,4 +12,4 @@ COPY ./main.py /code/
 COPY ./alembic.ini /code/
 
 
-CMD ["uvicorn","main:app","--host", "0.0.0.0","--port","80"]
+CMD ["python","main.py"]
